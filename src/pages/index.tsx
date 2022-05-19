@@ -1,8 +1,6 @@
 import type { NextPage } from 'next'
 import { useEffect, useState } from 'react'
 
-interface factProps {}
-
 const Home: NextPage = () => {
   const [facts, setFacts] = useState([''])
   const [factToShow, setFactToShow] = useState('')
