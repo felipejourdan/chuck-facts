@@ -25,7 +25,6 @@ const Home: NextPage = () => {
       }
       console.log('fez call api')
       setFacts(factsList)
-      setTriggerCallApi(false)
     }
 
     getFacts()
@@ -37,7 +36,7 @@ const Home: NextPage = () => {
   }
 
   if (factCount === 10) {
-    setTriggerCallApi(true)
+    setTriggerCallApi(!triggerCallApi)
     setFactCount(0)
   }
 
